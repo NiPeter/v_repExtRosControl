@@ -1,2 +1,2 @@
 # v_repExtRosControl
-V-REP plugin for interfacing simlated robots with ROS control
+V-REP plugin for interfacing simulated robots with ROS control
