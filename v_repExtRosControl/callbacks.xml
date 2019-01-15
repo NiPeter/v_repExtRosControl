@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="callbacks.xsl"?>
+
+<plugin name="RosControl" short-name="RosControl" author="piotnikiel@gmail.com">
+    <description>Ros control plugin</description>
+		<command name="createRobot">
+				<description>Create robot</description>
+				<params>
+						<param name="robot_name" type="string">
+								<description>A robot name</description>
+						</param>
+				</params>
+				<return>
+						<param name="handle" type="int">
+								<description>Robot handle</description>
+						</param>
+				</return>
+		</command>
+		<command name="initRobot">
+				<description>Initialise robot</description>
+				<params>
+						<param name="robot_handle" type="int">
+								<description>Handle to robot</description>
+						</param>
+				</params>
+				<return>
+						<param name="result" type="int">
+								<description>Result, 0 if success</description>
+						</param>
+				</return>
+		</command>
+		<command name="addJoint">
+				<description>Add joint to robot</description>
+				<params>
+						<param name="robot_handle" type="int">
+								<description>Handle to robot</description>
+						</param>
+						<param name="joint_handle" type="int">
+								<description>Handle to vrep joint</description>
+						</param>
+						<param name="joint_name" type="string">
+								<description>ROS joint name</description>
+						</param>
+						<param name="max_force" type="float" default="2.5">
+								<description>Max force, will overwrite joint dialogbox property</description>
+						</param>
+				</params>
+				<return>
+						<param name="result" type="int">
+								<description>Result, 0 if success</description>
+						</param>
+				</return>
+		</command>
+</plugin>

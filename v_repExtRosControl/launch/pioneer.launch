@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+<group ns="pioneer">
+
+  <rosparam file="$(find v_repExtRosControl)/launch/pioneer_controllers.yaml"  command="load"/>
+
+  <node name="controller_spawner" pkg="controller_manager" type="controller_manager" respawn="false" output="log"
+		args="spawn state diff_drive"/>
+
+</group>
+</launch>
