@@ -1,0 +1,6 @@
+[submodule "v_repExtRosControl/external/v_repStubsGen"]
+	path = v_repExtRosControl/external/v_repStubsGen
+	url = https://github.com/CoppeliaRobotics/v_repStubsGen.git
+[submodule "v_repExtRosControl/external/_repPlusPlus"]
+	path = v_repExtRosControl/external/_repPlusPlus
+	url = https://github.com/CoppeliaRobotics/v_repPlusPlus.git
