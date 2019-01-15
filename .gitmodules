@@ -4,3 +4,9 @@
 [submodule "v_repExtRosControl/external/_repPlusPlus"]
 	path = v_repExtRosControl/external/_repPlusPlus
 	url = https://github.com/CoppeliaRobotics/v_repPlusPlus.git
+[submodule "v_repExtRosControl/cmake"]
+	path = v_repExtRosControl/cmake
+	url = https://github.com/CoppeliaRobotics/cmake.git
+[submodule "v_repExtRosControl/external/v_repPlusPlus"]
+	path = v_repExtRosControl/external/v_repPlusPlus
+	url = https://github.com/CoppeliaRobotics/v_repPlusPlus.git
